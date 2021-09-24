@@ -21,4 +21,5 @@ router.get('/search/title/:title', async (req, res) => {
     res.json(await db.getEventsByTitle(req.params.title));
 });
 
+
 module.exports = router;
